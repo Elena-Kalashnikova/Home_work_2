@@ -3,9 +3,6 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-using System.Data.SqlTypes;
-using System.Xml.XPath;
-
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
