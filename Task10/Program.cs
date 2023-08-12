@@ -6,13 +6,16 @@
 Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
  if (number < 0){
-    number = -1;
+    number *= -1;
  }
 
 if (number >=100 && number <= 999){
-    int second_digit = number /10 % 10;
+    int second_digit = Second_digit(number);
     Console.Write($"Вторая цифра числа: {second_digit}");
 }
 else {
     Console.Write("Ошибка ввода");
+}
+int Second_digit(int digit){
+    return digit  = number/ 10 % 10;
 }
